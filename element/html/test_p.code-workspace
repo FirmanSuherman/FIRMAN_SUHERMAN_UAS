@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../freelancer-portfolio-template"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "test_p"
+	}
+}

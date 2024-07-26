@@ -1,0 +1,392 @@
+:root{
+    font-size: 16px;
+    font-family: 'Comic sans ms';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #010025;
+    --bg-secondary: #002c65;
+    --transition-speed: 600ms;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0);
+}
+
+header{
+  display: flex;
+  align-items: center;
+  height: 90vh;
+}
+
+#myVideo {
+    position: absolute;
+    max-width: 1440px;
+    right: 0;
+    bottom: 0;
+
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    object-position: center bottom;
+    
+    z-index: -1;
+    max-width: 100%;
+    min-height: 100vh;
+}
+#logo{
+    width: 130px;
+    height: 50px;
+    margin: 5px;
+    position: absolute;
+    margin: 20px;
+    top:0;
+    right: 0;
+}
+
+
+.trans {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+
+.trans svg {
+    transform: rotate(0deg);
+    transition: var(--transition-speed);
+}
+.trans .link-text{
+    font-size: 10px;
+}
+
+#navbar:hover .trans svg {
+    transform: rotate(-180deg);
+}
+
+#navbar {
+    width: 5rem;
+    height: 10s0vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 600ms ease;
+    border-radius: 60px;
+    opacity: 0.8;
+}
+.navbar-nav {
+    list-style: none;
+    margin-top: 50px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.nav-item{
+    width: 100%;;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.link-text{
+    display: none;
+    margin-left: 1rem;
+    color: #3faafc;
+}
+.nav-link svg{
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+.nav-link:hover {
+    border-radius: 70px;
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+#navbar:hover{
+    width: 16rem;
+    border-bottom-left-radius:0;
+    border-top-left-radius:0;
+    border-bottom-right-radius:60px;
+    border-top-right-radius:60px;
+}
+#navbar:hover .link-text{
+    display: inline;
+    transition: width 800ms ease;
+}
+#navbar:focus{
+    width: 5rem;
+}
+#navbar:focus .link-text{
+    display: none;
+    transition: width 800ms ease;
+}
+main{
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.element{
+    width: 40%;
+    height: 85%;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: none;
+}
+.element img,.element a{
+    
+    -user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.element .sub1{
+    width: 23%;
+    height: 23%;
+    opacity: 0.8;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: relative;
+    top: 57%;
+    left: 3%;
+}
+.element .sub2{
+    width: 23%;
+    height: 23%;
+    opacity: 0.7;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: relative;
+    top: -2%;
+    left: 3%;
+}
+.element .sub3{
+    width: 23%;
+    height: 23%;
+    opacity: 0.9;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: relative;
+    top: -43%;
+    left: 38%;
+}
+.element .sub4{
+    width: 23%;
+    height: 23%;
+    opacity: 0.8;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: relative;
+    top: -49%;
+    left: 73%;
+}
+.element .sub5{
+    width: 23%;
+    height: 23%;
+    opacity: 0.9;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: relative;
+    top: -35%;
+    left: 73%;
+}
+.element .sub6{
+    width: 23%;
+    height: 23%;
+    opacity: 0.9;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: relative;
+    top: -42%;
+    left: 38%;
+}
+.element .sub7{
+    width: 23%;
+    height: 23%;
+    opacity: 0.9;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: relative;
+    top: -100%;
+    left: 38.5%;
+}
+.sub1 img{
+    width: 80%;
+    height: 80%;
+    position: relative;
+    left: 10%;
+    top: 10%;
+
+}
+.sub2 img{
+    width: 80%;
+    height: 90%;
+    position: relative;
+    opacity: 0.8;
+    top: 6%;
+    left: 13%;
+}
+
+.sub3 img{
+    width: 80%;
+    height: 80%;
+    position: relative;
+    opacity: 1;
+    left: 10%;
+    top: 10%;
+}
+
+.sub4 img{
+    width: 80%;
+    height: 80%;
+    position: relative;
+    opacity: 1;
+    left:10%;
+    top:10%
+}
+
+.sub5 img{
+    width: 90%;
+    height: 80%;
+    position: relative;
+    opacity: 1;
+    left: 10%;
+    top: 10%;
+}
+.sub6 img{
+    width: 90%;
+    height: 80%;
+    position: relative;
+    opacity: 0.8;
+    left: 5%;
+    top: 11%;
+}
+.sub7 img{
+    width: 90%;
+    height: 90%;
+    position: relative;
+    opacity: 0.8;
+    left: 5%;
+    top: 7%;
+}
+.error{
+    width: 100%;
+    height: 11vh;
+    background: #3faafc;
+    display: none;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    top: 0;
+}
+@media screen and (max-width: 768px)and (min-width:426px){
+    
+    #myVideo {
+        width: 768px;
+        height: 768x;
+        object-fit: cover;
+        object-position: center bottom;
+    }
+    .element{
+        width: 15%;
+        height: 100%;
+        position: fixed;
+        clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%);
+        top: 13%;
+        left: 83%;
+        display: none;
+    }
+    .element .sub1,.element .sub2,.element .sub3,.element .sub4,.element .sub5,.element .sub6,.element .sub7{
+        width: 85%;
+        height: 11%;
+        left: 0;
+        top: 0;
+        margin: 4% 2%;
+    }
+}
+@media screen and (max-width: 426px) and (min-width:375px) {
+    nav-link svg{
+        width: 1rem;
+        margin: 0;
+    }
+    .element{
+        width: 17%;
+        height: 100%;
+        position: fixed;
+        clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%);
+        top: 13%;
+        left: 79%;
+        display: none;
+    }
+    .element .sub1,.element .sub2,.element .sub3,.element .sub4,.element .sub5,.element .sub6,.element .sub7{
+        width: 100%;
+        height: 10%;
+        left: 0;
+        top: 0;
+        margin: 4% 2%;
+    }
+    #navbar:hover{
+        width: 12rem;
+    }
+    #myVideo {
+        width: 425px;
+        height: 425px;
+        object-fit: cover;
+        object-position: center top;
+    }
+    
+}
+@media screen and (max-width: 374px) and (min-width: 320px){
+    .element{
+        width: 17%;
+        height: 100%;
+        position: fixed;
+        clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%);
+        top: 13%;
+        left: 79%;
+        display: none;
+    }
+    .element .sub1,.element .sub2,.element .sub3,.element .sub4,.element .sub5,.element .sub6,.element .sub7{
+        width: 100%;
+        height: 8%;
+        left: 0;
+        top: 8%;
+        margin: 4% 2%;
+    }
+
+}
+@media screen and (max-width: 319px) and (min-width: 0px){
+    
+    header{
+        display: none;
+    }
+    main :not(.error),main :not(h1){
+        display: none;
+    }
+    .error{
+        width: 100%;
+        height: 100%;
+        font-size: 100%;
+        background: #191b1c;
+        color: rgb(255, 0, 0);
+        display: grid;
+        align-items: center;
+
+        position: fixed;
+        right: 0;
+        top: 0;
+
+    }
+}
